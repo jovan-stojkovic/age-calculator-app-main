@@ -11,48 +11,48 @@
       href="./assets/images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="app.js"></script>
+    <script defer src="app.js"></script>
     <title>Age calculator app</title>
   </head>
   <body>
     <main>
-      <div class="main-container">
+      <form id="form">
         <div class="inputs">
           <div class="segment">
-            <p class="heading">DAY</p>
-            <input class="input js-day" type="number" />
-            <p class="error">Must be a valid day</p>
+            <label for="day">DAY</label>
+            <input id="day" name="day" type="number" />
+            <div id="error-day"></div>
           </div>
           <div class="segment">
-            <p class="heading">MONTH</p>
-            <input class="input js-month" type="number" />
-            <p class="error">Must be a valid month</p>
+            <label for="month">MONTH</label>
+            <input id="month" name="month" type="number" />
+            <div id="error-month"></div>
           </div>
           <div class="segment">
-            <p class="heading">YEAR</p>
-            <input class="input js-year" type="number" />
-            <p class="error">Must be in the past</p>
+            <label for="year">YEAR</label>
+            <input id="year" name="year" type="number" />
+            <div id="error-year"></div>
           </div>
         </div>
-        <div class="devider">
-          <img
-            src="https://www.iconbolt.com/iconsets/bigmug-solid/arrow-down.svg"
-            alt="arrow"
+        <button type="submit">
+          submit<img
+            src="https://www.iconbolt.com/iconsets/font-awesome-brands/get-pocket.svg"
+            alt=""
           />
+        </button>
+      </form>
+      <div class="info-container">
+        <div class="info">
+          <p class="years-value value">--</p>
+          <p class="label">years</p>
         </div>
-        <div class="info-container">
-          <div class="info">
-            <p class="number">38</p>
-            <p class="what">years</p>
-          </div>
-          <div class="info">
-            <p class="number">3</p>
-            <p class="what">months</p>
-          </div>
-          <div class="info">
-            <p class="number">26</p>
-            <p class="what">days</p>
-          </div>
+        <div class="info">
+          <p class="months-value value">--</p>
+          <p class="label">months</p>
+        </div>
+        <div class="info">
+          <p class="days-value value">--</p>
+          <p class="label">days</p>
         </div>
       </div>
     </main>

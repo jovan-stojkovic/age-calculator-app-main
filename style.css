@@ -17,3 +17,8 @@
   font-size: 32px;
   font-family: "Poppins", sans-serif;
 }
+
+.segment {
+  display: flex;
+  flex-direction: column;
+}
